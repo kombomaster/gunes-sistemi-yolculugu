@@ -225,6 +225,56 @@ h1, h2 {
     }
 }
 
+/* Mouse Scroll Animasyonu */
+.scroll-mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    margin: 20px auto 0;
+}
+
+.scroll-mouse::before {
+    content: '';
+    width: 4px;
+    height: 8px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+    border-radius: 4px;
+    animation: scrollAnim 2s infinite;
+}
+
+@keyframes scrollAnim {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
+
+/* Başlangıç ekranı düzenlemesi */
+#baslangic .content {
+    text-align: center;
+}
+
+#baslangic h1 {
+    margin-bottom: 10px;
+}
+
+.scroll-text {
+    font-size: 1.1rem;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
 /* Responsive Tasarım */
 @media (max-width: 768px) {
     .content {
