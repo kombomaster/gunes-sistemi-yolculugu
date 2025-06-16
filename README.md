@@ -54,4 +54,4 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## İletişim
 
-[İletişim bilgileriniz] 
+https://x.com/lilbrokoli
